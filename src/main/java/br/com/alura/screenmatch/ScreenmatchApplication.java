@@ -17,12 +17,20 @@ public class ScreenmatchApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("qual série/filme você deseja acessar?");
+		String pesquisa = entrada.nextLine();
+
+
 		ConsumoApi consumoApi = new ConsumoApi();
-		var json = consumoApi.obterDados("https://www.omdbapi.com/?t=andor&apikey=68cc5b8a");
-		System.out.println(json);
+		var json = consumoApi.obterDados("https://www.omdbapi.com/?t=" + pesquisa + "&apikey=68cc5b8a");
+		/* System.out.println(json);
+		*/
 
 		ConverteDados conversor = new ConverteDados();
 		DadosSerie dados = conversor.obterDados(json, DadosSerie.class);
 		System.out.println(dados);
 	}
+
+
 }
