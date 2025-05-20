@@ -1,4 +1,4 @@
-# Screenmatch
+# Screenmatch de Series!
 
 Este é um projeto Java com **Spring Boot** que usa dados da API da OMDB com base na pesquisa do usuário, ele busca informações de séries e imprime os dados no console.
 
