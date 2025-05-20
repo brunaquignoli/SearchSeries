@@ -1,5 +1,8 @@
 # Screenmatch de Series!
 
+Projeto que pede, no input: Nome de uma série, alguma parte de um episódio específico e uma data específica de lançamento de temporada!
+E, ao serem inseridos esses dados, ele apresenta o título, a quantidade de temporadas, a avaliação geral da série entre outras informações mais específicas sobre cada temporada!
+
 Este é um projeto Java com **Spring Boot** que usa dados da API da OMDB com base na pesquisa do usuário, ele busca informações de séries e imprime os dados no console.
 
 > Feito com: Java, Spring Boot, Gson para conversão de JSON, API OMDB
